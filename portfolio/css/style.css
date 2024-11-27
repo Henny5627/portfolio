@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif ;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 4%;
+    background: rgba(0, 0, 0, 0.854);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+ .header .logo{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.logo:hover{
+    color: white;
+}
+span{
+    color: #0dcaf0;
+}
+.header nav a{
+    text-decoration: none;
+    color: white;
+}
+.header nav a:hover{
+    color: #0dcaf0;
+    transition: 1s ease;
+}
+.header a{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 50px;
+}
+.header a:last-child{
+    margin-right: 50px;
+}
+.bg-color{
+    background: rgb(193 236 244 / 45%);
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 10em;
+    padding: 30px 8% 0;
+}
+.home .img {
+    width: 100%;
+    max-width: 262px;
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h2{
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+.home-content h3{
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+.home-content h1{
+    font-size: 61px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+.img img{
+    transition: 1s all ease;
+}
+.img img:hover{
+    transform: rotateY(360deg);
+}
+button{
+    font-size: 18px;
+    color: white;
+    background-color:#0dcaf0;
+    border: 2px solid #0dcaf0;
+    padding: 10px 24px;
+    font-weight: 600;
+    display: flex;
+    gap: 2em;
+}
+button:hover{
+   background: transparent;
+   color: #0dcaf0;
+   transition: 1s ease;
+}
+.font{
+    font-size: 45px;
+    text-align: center ;
+}
+.About{
+    display: flex;
+}
+.About h3{
+    font-size: 40px;
+    text-align: center;
+    /* padding-top: 100px; */
+}
+.About h2{
+    text-align: center;
+}
+.About-content{
+    display: flex;
+}
+.About-content p{
+    font-size: 1rem;
+}
+.bio-part {
+    width: 50%;
+    align-self: center;
+}
+.img-wrapper {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+.bio-part img {
+    width: 100%;
+    height: auto;
+}
+.wrapper container h3{
+    text-align: center;
+}
+.bio-part h3{
+    font-size: 34px;
+    padding-bottom: 18px;
+}
+.bio-part p{
+    padding-bottom: 18px;
+}
+.container2 h3{
+    text-align: center;
+    font-size: 45px;
+}
+.container2 h2{
+    text-align: center;
+    font-size: 26px;
+    padding-bottom: 50px;
+}
+.skill{
+    /* align-self: center; */
+    justify-content: space-around;
+    display: flex;
+}
+.skill-content{
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+.skill-content h4{
+    font-size: 30px;
+}
+.skill-content p{
+    font-size: 1rem;
+}
+#progress-box{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+.container3{
+    padding-bottom: 50px;
+}
+.container3 h2{
+    text-align: center;
+    font-size: 45px;
+    padding-top: 50px;
+}
+.container3 h3{
+    text-align: center;
+    font-size: 26px;
+    padding-bottom: 50px;
+}
+.contact{
+    justify-content: space-around; 
+    display: flex;  
+}
+.contact-content{
+    max-width: 450px;
+    height: auto;
+}
+.contact-form{
+  max-width: 500px;
+}
+.contact a{
+    color: black;
+}
+.contact a:hover {
+    color: #ccc;
+}
+.contact-form .msg-label{
+    left: 10px;
+    color: #3f454b;
+    opacity: .8;
+}
+span .text-info:hover{
+   transform: translateY(12px);
+}
+footer.text-white.pt-3.pb-3.text-center {
+    padding: 0 !important;
+}
+footer .mb-0{
+    padding: 10px 10px;
+}
+footer{
+    background-color: black;
+}
+
+/*  responsive css */
+
+@media only screen and (max-width: 1280px) {
+    
+}
+@media only screen and (max-width: 1024px) {
+    .home-content h1{
+        font-size: 42px;
+    }
+    .home-content h3{
+        font-size: 24px;
+    }
+    .home-content h2{
+        font-size: 24px;
+    }
+    .home-content .img{
+        width: 70px;
+        height: 30px;
+    }
+}
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+    .home-content h1 {
+        font-size: 31px;
+    }
+    .home-content h3 {
+        font-size: 18px;
+    }
+    .home-content h2 {
+        font-size: 18px;
+
+    }
+    .skill-content h3{
+        font-size: 12px;
+    }
+    .skill-content p{
+        font-size: 12px;
+    }
+    .container2{
+        margin: 16px;
+    }
+    .skill-content h4{
+        font-size: 18px;
+    }
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row.contact-form {
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    header{
+        height: 55px;
+    }
+    .header a{
+        font-size: 12px;
+        margin: 15px;
+        margin-left: 35px;
+    }
+    .header .logo{
+        font-size: 20px;
+    }
+    .home-content .img{
+        width: 60px;
+        height: 30px;
+    }
+    .home-content h2{
+        font-size: 20px;
+    }
+    .home-content h1{
+        font-size: 36px;
+    }
+    .home-content h3{
+        font-size: 20px;
+    }
+    .home-content button{
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .wrapper.container h3{
+        font-size: 30px;
+        padding-bottom: 50px;
+    }
+    .wrapper.container h3.new{
+        padding-bottom: 0;
+    }
+    .img-wrapper{
+        width: 220px;
+        height: 220px;
+    }
+    .bio-part h3{
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+    }
+    .bio-part p{
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+    .bio-part button{
+        padding: 10px 12px;
+        margin-top: 7px;
+        font-size: 12px;
+    }
+    .skill-content h4{
+        font-size: 20px;
+    }
+    .skill-content p{
+        font-size: 14px;
+    }
+    .container2 h3{
+        font-size: 30px;
+        margin-bottom: 2px;
+    }
+    .container2 h2{
+        font-size: 18px;
+        margin: 0;
+    }
+    .skill{
+        margin: 10px;
+    }
+    .skill h4{
+        font-size: 18px;
+    }
+    .skill p{
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+    }
+    .skill button{
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+    .container3 h2{
+        font-size: 30px;
+        margin: 2px;
+        padding-top: 15px;
+    }
+    .container3 h3{
+        font-size: 18px;
+    }
+    .container3{
+        margin: 10px;
+        padding-bottom: 14px;
+    }
+    .contact-content h4{
+        font-size: 18px;
+    }
+    .contact-content p{
+        font-size: 12px;
+    }
+    .container3 button{
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+    footer{
+        font-size: 14px;
+        height: 40px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    header{
+        height: 40px;
+        width: 100%;
+    }
+    .header .logo{
+        font-size: 18px;
+    }
+    .header a{
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .img{
+        margin-bottom: 30px;       
+    }
+    .home {
+        justify-content: center;
+        gap: 2em;
+    }
+    .bg-color{
+        width: 100%;
+    }
+    .font{
+        text-align: center;
+        font-size: 30px;
+    }
+    .home-content{
+        text-align: center;
+    }
+    .home-content h1{
+        font-size: 32px;
+    }
+    .home-content h2{
+        font-size: 17px;
+    }
+    .home-content h3{
+        font-size: 18px;
+    }
+    .home-content button{
+        padding: 5px 12px;
+        margin: auto;
+    }
+    .home.bg-color{
+        flex-wrap: wrap;
+    }
+    .img img{
+        width: 30px;
+        height: 20px;
+    }
+    /* .wrapper h3{
+       font-size: 22px;
+    } */
+    .img-wrapper{
+        height: 180px;
+        width: 180px;
+    }
+    .bio-part h3{
+        font-size: 17px;
+        margin: 0;
+        padding: 0;
+    }
+    .bio-part p{
+        font-size: 12px;
+        margin: 0;
+        padding-bottom: 5px;
+    }
+    .bio-part button{
+        padding: 6px;
+        font-size: 14px;
+    }
+    .container2 h3{
+        font-size: 28px;
+        margin-bottom: 3px;
+    }
+    .container2 h2{
+        font-size: 16px;
+    }
+    .skill-content{
+        margin: 16px;
+    }
+    .skill-content h4{
+        font-size: 17px;
+    }
+    .skill-content p{
+        font-size: 12px;
+        margin: 0;
+    }
+    #progress-box{
+        font-size: 12px;
+    }
+    .container3 h2{
+        padding: 0;
+    }
+    .container3{
+        margin: 16px;
+        padding-bottom: 0;
+    }
+    .container3 h2{
+        font-size: 28px;
+        margin-bottom: 3px;
+    }
+    .container3 h3{
+        font-size: 16px;
+    }
+    .contact-content h4{
+        font-size: 17px;
+    }
+    .contact-content p{
+        font-size: 12px;
+        margin: 0;
+    }
+    .container3 button{
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+    footer{
+        height: 40px;
+        width: 100%;
+        font-size: 14px;
+    }
+    .uni-padding{
+        padding-bottom: 36px;
+    }
+    .bttn{
+        margin: 0 auto 10px;
+    }
+}
+
+
